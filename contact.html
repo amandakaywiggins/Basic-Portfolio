@@ -3,22 +3,34 @@
     <head>
         <meta charset="UTF-8">
         <title>Amanda Kay Wiggins: Portfolio</title>
-        <link rel="stylesheet" type="style/css" href="assets/css/reset.css">
-        <link rel="stylesheet" type="style/css" href="assets/css/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Cinzel:900|Josefin+Slab:600" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+        <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     </head>
 
     <body>
-        <heading>
-                <h1>Amanda Kay Wiggins</h1>
-                <div class="nav">About</div>
-                <div class="nav">Portfolio</div>
-                <div class="nav">Contact</div>
-        </heading>
+        <header>
+            <nav>
+                <ul>
+                    <li id="floatleft"><h1>Amanda Kay Wiggins</h1></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="index.html">About</a></li>
+                </ul>
+            </nav>
+        </header>
         <section>
-            <h2>Contact</h2>
-            <h3>Name</h3>
-            <h3>Email</h3>
-            <h3>Message</h3>
+                <form action="/action_page.php">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name...">
+                    <br>
+                    <label for="email">Email</label>
+                    <input type="text" id="email" name="email" placeholder="Your email...">
+                    <br>
+                    <label for="message">Message</label>
+                    <input type="text" id="message" name="message">
+                    <input type="submit" value="Submit">
+                </form>
         </section>
         <footer>
             <h3>Copywrite&copy;</h3>

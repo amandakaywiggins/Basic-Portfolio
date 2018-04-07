@@ -1,44 +1,186 @@
-h1 {
-    float:left;
-    background-color: #4aaaa6;
-    color: #ffffff;
-    margin: 0 auto;
-    padding: 20px;
+header {
+    background-color: #ffffff;
+    width: 100%;
+    font-family: 'Cinzel', serif;
 }
 
-.nav {
+nav {
+    overflow: hidden;
+    background-image: url('../../assets/images/rainbow.png');
+    background-color: #ffffff;
+    width: 100%;
+    height: 100px;
+    border-bottom: solid;
+    border-width: 3px;
+    border-color: #41639b;
+}
+
+ul {
+    list-style-type: none;
+    margin: auto;
+    padding: 0;
+    position: relative;
+    top: 0;
+    width: 1000px;
+    background-color: #ffffff;
+}
+
+li {
     float: right;
-    padding: 20px;
+    margin-top: 40px;
+}
+
+li a {
+    display: block;
+    padding: 25px;
+    text-decoration: none;
+    color: #10203a;
+}
+
+li a:hover {
+    background-color: #41639b;
+    color: #ffffff;
+}
+
+h1 {
+    background-color: #41639b;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 25px;
+    padding: 21px;
+    margin: 0;
+}
+
+#floatleft {
+    float: left;
+    margin-top: 35px;
+}
+
+body {
+    /*background from Subtle Patterns*/
+    background-image: url('../images/marble.jpg');
+    background-repeat: repeat-y repeat-x;
+    background-color: purple;
+    height: 100%;
+    overflow: scroll;
 }
 
 section {
-    background-color: #ffffff;
-    font-family: "Arial", "Helvetica Neue" , Helvetica, sans-serif;
+    background-color: #ddeaff;
     width: 960px;
-    padding: 30px;
-    margin: 0 auto;
-    position: relative;
+    padding: 20px;
+    margin: auto;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.clearfix{
+    overflow: auto;
 }
 
 h2 {
-    color: #4aaaa6;
+    color: #10203a;
+    font-weight: bold;
+    font-size: 25px;
+    padding: 20px 0px 20px 0px;
     border-bottom: solid;
-    border-width: 5px;
-    border-color: grey;
+    border-width: 2px;
+    border-color: #41639b;
 }
 
 #bio-image {
     width: 150px;
     height: 150px;
-    padding: 5px;
+    float: left;
+    padding: 20px 20px 20px 0px;
+}
+
+p {
+    padding: 20px;
+    color: #10203a;
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    line-height: 1.5em;
+}
+
+#table {
+    height: 1200px;
+    margin-bottom: 100px;
+}
+
+table, tr, td {
+    border: none;
+    text-align: center;
+    vertical-align: middle;
+    padding: 10px;
+}
+
+img {
+    height: 300px;
+    width: 400px;
+    padding: 10px;
+}
+
+img:hover {
+    opacity: 0.5;
+}
+
+.caption {
+    position: relative;
+}
+
+.textalign {
+    position: absolute;
+    bottom: 60px;
+    left: 20px;
+    width: 400px;
+    background-color: #41639b;
+    color: #ffffff;
+    font-size: 18px;
+    font-family: 'Josefin Slab', serif;
+    padding: 20px 0px 20px 0px;
+}
+
+label {
+    font-family: 'Cinzel', serif;
+    color: #10203a;
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 15%;
+    background-color: #41639b;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#message{
+    height: 150px;
 }
 
 footer {
+    position: fixed; 
+    bottom: 0;
+    width: 100%;
+    background-image: url('../../assets/images/rainbow.png');
     background-color: #666666;
-    color: #ffffff;
+    color: darkslategrey;
     border-top: solid;
     border-width: 10px;
-    border-color: #4aaaa6;
+    border-color: #41639b;
     text-align: center;
-    padding: 20px 20px 0px 20px;
+    padding: 20px 20px 5px 20px;
 }
